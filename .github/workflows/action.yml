@@ -28,8 +28,10 @@ jobs:
           node-version: '24'
 
       # Install the Bash Automated Testing System globally through npm.
+      - run: echo "command started at [$(date '+%Y-%m-%d %H:%M:%S %Z')] "
       - run: npm install -g bats
       - run: echo "GitHub Actions workflow is working!"
       # Display the installed Bats version.
       - run: bats -v
+      - run: echo "command completed at [$(date '+%Y-%m-%d %H:%M:%S %Z')] "
       
