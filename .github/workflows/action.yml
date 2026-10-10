@@ -4,7 +4,7 @@ name: learn-github-actions
 
 # Optional name for each workflow run. The github.actor context identifies
 # the user or app that initiated the run.
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is learning GitHub Actions (edited)
 
 # Trigger the workflow whenever commits or tags are pushed to the repository.
 on: [push]
@@ -32,3 +32,4 @@ jobs:
 
       # Display the installed Bats version.
       - run: bats -v
+      - run: xdg-open https://youtube.com
